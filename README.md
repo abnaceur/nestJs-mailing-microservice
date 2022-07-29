@@ -15,7 +15,7 @@
 ## Description
 
 This project is based on technical test 
-[requirments](https://github.com/nestjs/nest) for a Senior fullstack developer position at Liquidity Group. 
+[requirments](https://github.com/abnaceur/nestJs-mailing-microservice/tree/master/docs/NestJSHomeAssignment.pdf) for a Senior fullstack developer position at Liquidity Group. 
 
 ## prerequisite
 
@@ -37,9 +37,9 @@ Copy the environement variables for the gateway
 $ cp apps/gateway/.env-example apps/gateway/.env
 ```
 
-Copy the environment variables for the mailing
-PS: - there a hard coded test email credentials
-which will be no longer valid afetr this test due.
+Copy the environment variables for the mailing<br/>
+PS: - there are a hard coded test email credentials
+which will be no longer valid after this test due.
 
 To use Mail dev modify this two lines in .env-example
 
