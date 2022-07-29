@@ -27,35 +27,35 @@ This project is based on a technical test
 
 ## Installation for development
 
-Clone the project repository
+1 - Clone the project repository
 ```bash
 $ git clone https://github.com/abnaceur/nestJs-mailing-microservice.git
 ```
 
-Copy the environement variables for the gateway
+2 - Copy the environement variables for the gateway
 ```bash
 $ cp apps/gateway/.env-example apps/gateway/.env
 ```
 
-Copy the environment variables for the mailing<br/>
-PS: - there are a hard coded test email credentials
+3 - Copy the environment variables for the mailing<br/>
+PS: - there is a hard coded test email credential
 which will be no longer valid after this test due.
 
-To use Mail dev modify this two lines in .env-example
+To use Maildev, modify these two lines in .env-example
 
 ```bash
 $ MAIL_HOST=[Get the docker container name]
 $ MAIL_PORT=1025
 ```
 
-Then copy the environment variables 
+4 - Then copy the environment variables 
 ```bash
 $ cp apps/mailing/.env-example apps/mailing/.env
 ```
 
 ## Running the app
 
-Build and start the project
+1 - Build and start the project
 ```bash
 # development
 $ docker-compose up --build
