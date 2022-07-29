@@ -61,10 +61,10 @@ Build and start the project
 $ docker-compose up --build
 ```
 
-PS: - This might take some time, go to grab a cap of coffe :) while waiting.
+PS: - This might take some time, go to grab a cup of coffe while waiting :)
 
-## Using the api
-You can access the Api on port 3000 <br/>
+## Using the API
+You can access the API on port 3000 <br/>
 To send an email you need postman or curl (any other tool)<br/>
 
 Request body<br/>
