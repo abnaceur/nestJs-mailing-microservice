@@ -68,7 +68,7 @@ You can access the API on port 3000 <br/>
 To send an email you need postman or curl (any other tool)<br/>
 
 Request body<br/>
-PS: - You can sue the hard coded one as long as it is valid ;)
+PS: - You can see the hard coded one as long as it is valid ;)
 ```bash
 {
   "to": "email_to",
@@ -78,7 +78,7 @@ PS: - You can sue the hard coded one as long as it is valid ;)
 }
 ```
 
-APi endpoint
+API endpoint
 ```bash
 $ http://localhost:3000/mail/send
 ```
@@ -88,7 +88,7 @@ $ http://localhost:3000/mail/send
 - Author - [Abdeljalil Naceur](https://naceur-abdeljalil.com/)
 
 ## Acknowledgement
-[NestJs](https://nestjs.com/).
-[Docker](https://www.docker.com/).
-[ExpressJs](https://expressjs.com/).
-[Jest](https://jestjs.io/).
+[NestJs](https://nestjs.com/).<br/>
+[Docker](https://www.docker.com/).<br/>
+[ExpressJs](https://expressjs.com/).<br/>
+[Jest](https://jestjs.io/).<br/>
