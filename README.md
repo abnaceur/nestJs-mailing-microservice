@@ -5,7 +5,7 @@
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A Mailling Micro-service built by NestJs framework, RabitMQ, and Docker.</p>
+  <p align="center">A Mailling Micro-service built using NestJs framework, RabitMQ, and Docker.</p>
     <p align="center">
 <a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/badge/npm-v16.15.1-blue" alt="NPM Version" /></a>
 <a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/docker-v20.10.14-brightgreen" alt="Discord"/></a>
