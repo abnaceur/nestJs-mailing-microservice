@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: ./apps/gateway/Dockerfile
-    command: npm run start:dev gateway
+    command: /bin/sh -c "/opt/startup.dev.sh"
     env_file:
       - ./apps/gateway/.env
     volumes:
@@ -22,7 +22,7 @@ services:
       dockerfile: ./apps/mailing/Dockerfile
     environment:
       NODE_TLS_REJECT_UNAUTHORIZED: 0
-    command: npm run start:dev mailing
+    command: /bin/sh -c "/opt/startup.dev.sh"
     env_file:
       - ./apps/mailing/.env
     volumes:

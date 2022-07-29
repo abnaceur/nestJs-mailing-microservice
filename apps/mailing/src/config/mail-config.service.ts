@@ -11,9 +11,16 @@ export class MailConfigService implements MailerOptionsFactory {
   createMailerOptions(): MailerOptions {
     return {
       transport: {
-        host: this.configService.get('mail.host'),
-        port: this.configService.get('mail.port'),
-        ignoreTLS: false,
+        // To test with maildev
+        // host: this.configService.get('mail.host'),
+        // port: this.configService.get('mail.port'),
+        // ignoreTLS: false,
+        host: "send.one.com",
+        port: 465,
+        auth: {
+          user: "tech-test@naceur-abdeljalil.com",
+          pass: "techtest",
+        },
       },
       template: {
         dir: path.join(process.env.PWD, 'apps/mailing/src/mail-templates'),
