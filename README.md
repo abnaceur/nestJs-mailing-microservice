@@ -61,7 +61,7 @@ Build and start the project
 $ docker-compose up --build
 ```
 
-PS: - This might take some time, go to grab a cop of coffe :) while waiting.
+PS: - This might take some time, go to grab a cap of coffe :) while waiting.
 
 ## Using the api
 You can access the Api on port 3000 <br/>
