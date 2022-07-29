@@ -1,73 +1,74 @@
 <p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
+  <a href="https://www.liquiditygroup.com/" target="blank"><img src="https://assets-global.website-files.com/62455fb5c801f78400e3ec88/62a838dd0ef93090540a7839_Logo_No%20Drop.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
 [circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
 [circleci-url]: https://circleci.com/gh/nestjs/nest
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
+  <p align="center">A Mailling Micro-service built by NestJs framework, RabitMQ, and Docker.</p>
     <p align="center">
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/npm/dm/@nestjs/common.svg" alt="NPM Downloads" /></a>
-<a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
-<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor" target="_blank"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec" target="_blank"><img src="https://img.shields.io/badge/Donate-PayPal-ff3f59.svg"/></a>
-    <a href="https://opencollective.com/nest#sponsor"  target="_blank"><img src="https://img.shields.io/badge/Support%20us-Open%20Collective-41B883.svg" alt="Support us"></a>
-  <a href="https://twitter.com/nestframework" target="_blank"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
+<a href="https://www.npmjs.com/~nestjscore" target="_blank"><img src="https://img.shields.io/badge/npm-v16.15.1-blue" alt="NPM Version" /></a>
+<a href="https://discord.gg/G7Qnnhy" target="_blank"><img src="https://img.shields.io/badge/docker-v20.10.14-brightgreen" alt="Discord"/></a>
+<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://img.shields.io/badge/amqplib-v0.9.0-yellowgreen" alt="Backers on Open Collective" /></a>
 </p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+This project is based on technical test 
+[requirments](https://github.com/nestjs/nest) for a Senior fullstack developer position at Liquidity Group. 
 
-## Installation
+## prerequisite
 
 ```bash
-$ npm install
+1 - Docker
+2 - Docker-compose
+3 - Git
+```
+
+## Installation for development
+
+Clone the project repository
+```bash
+$ git clone https://github.com/abnaceur/nestJs-mailing-microservice.git
+```
+
+Copy the environement variables for the gateway
+```bash
+$ cp apps/gateway/.env-example apps/gateway/.env
+```
+
+Copy the environment variables for the mailing
+PS: - there a hard coded test email credentials
+which will be no longer valid afetr this test due.
+
+To use Mail dev modify this two lines in .env-example
+
+```bash
+$ MAIL_HOST=[Get the docker container name]
+$ MAIL_PORT=1025
+```
+
+Then copy the environment variables 
+```bash
+$ cp apps/mailing/.env-example apps/mailing/.env
 ```
 
 ## Running the app
 
+Build and start the project
 ```bash
 # development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
+$ docker-compose up --build
 ```
 
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
+PS: - This might take some time, go to grab a cop of coffe :) while waiting.
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - [Abdeljalil Naceur](https://naceur-abdeljalil.com/)
 
-## License
-
-Nest is [MIT licensed](LICENSE).
+## Acknowledgement
+[NestJs](https://nestjs.com/).
+[Docker](https://www.docker.com/).
+[ExpressJs](https://expressjs.com/).
+[Jest](https://jestjs.io/).

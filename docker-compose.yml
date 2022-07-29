@@ -10,7 +10,6 @@ services:
       - ./apps/gateway/.env
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
     ports:
       - '3000:3000'
     depends_on:
@@ -27,7 +26,6 @@ services:
       - ./apps/mailing/.env
     volumes:
       - .:/usr/src/app
-      - /usr/src/app/node_modules
     depends_on:
       - rabbitmq
       - maildev

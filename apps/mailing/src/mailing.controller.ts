@@ -15,4 +15,5 @@ export class MailingController {
     this.mailingService.sendEmail(data);
     this.rmqService.ack(context);
   } 
-}
+}  
+  

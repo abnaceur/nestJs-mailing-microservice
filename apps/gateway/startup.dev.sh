@@ -3,7 +3,7 @@ echo "==== Checking Folders list ======"
 ls
 if [ ! -d "node_modules" ]; then
 echo "==== Installing dependencies ======" 
-npm i --force
+npm i 
 else
 echo "==== Dependencies already installed ======" 
 fi
