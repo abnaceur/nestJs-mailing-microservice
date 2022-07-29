@@ -63,6 +63,26 @@ $ docker-compose up --build
 
 PS: - This might take some time, go to grab a cop of coffe :) while waiting.
 
+## Using the api
+You can access the Api on port 3000 <br/>
+To send an email you need postman or curl (any other tool)<br/>
+
+Request body<br/>
+PS: - You can sue the hard coded one as long as it is valid ;)
+```bash
+{
+  "to": "email_to",
+  "from":"email_from",
+  "subject": "enter_subject",
+  "body": "enter_body"
+}
+```
+
+APi endpoint
+```bash
+$ http://localhost:3000/mail/send
+```
+
 ## Stay in touch
 
 - Author - [Abdeljalil Naceur](https://naceur-abdeljalil.com/)
