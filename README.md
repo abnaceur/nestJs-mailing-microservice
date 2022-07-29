@@ -88,7 +88,7 @@ $ http://localhost:3000/mail/send
 - Author - [Abdeljalil Naceur](https://naceur-abdeljalil.com/)
 
 ## Acknowledgement
-[NestJs](https://nestjs.com/).<br/>
-[Docker](https://www.docker.com/).<br/>
-[ExpressJs](https://expressjs.com/).<br/>
+[NestJs](https://nestjs.com/),<br/>
+[Docker](https://www.docker.com/),<br/>
+[ExpressJs](https://expressjs.com/),<br/>
 [Jest](https://jestjs.io/).<br/>
