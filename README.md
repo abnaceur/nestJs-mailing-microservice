@@ -61,7 +61,7 @@ $ cp apps/mailing/.env-example apps/mailing/.env
 $ docker-compose up --build
 ```
 
-PS: - This might take some time, go to grab a cup of coffe while waiting :)
+PS: - This might take some time, go and grab a cup of coffe while waiting :)
 
 ## Using the API
 You can access the API on port 3000 <br/>
