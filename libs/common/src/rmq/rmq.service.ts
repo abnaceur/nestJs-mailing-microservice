@@ -24,5 +24,3 @@ export class RmqService {
     channel.ack(originalMessage);
   }
 }
-// RABBIT_MQ_URI=amqp://rabbitmq:5672
-// RABBIT_MQ_MAILING_QUEUE=mailing

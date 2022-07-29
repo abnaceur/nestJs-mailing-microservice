@@ -10,7 +10,7 @@ export class MailingService {
   private readonly logger = new Logger(MailingService.name);
 
   async sendEmail(mailData: any) {
-    this.logger.log('Mailing..111.', mailData);
+    this.logger.log('Mailing...', mailData);
     await this.mailerService.sendMail({
       to: mailData.to,
       subject: mailData.subject,
