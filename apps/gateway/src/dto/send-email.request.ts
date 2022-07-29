@@ -1,17 +1,18 @@
 import {
   IsNotEmpty,
-  isEmail,
+  IsEmail,
   IsString,
 } from 'class-validator';
 
 export class SendEmailRequest {
   @IsString()
   @IsNotEmpty()
-  // @isEmail()
+  @IsEmail()
   to: string;
 
   @IsString()
   @IsNotEmpty()
+  @IsEmail()
   from: string;
 
   @IsString()

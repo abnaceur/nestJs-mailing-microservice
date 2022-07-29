@@ -14,6 +14,5 @@ export class MailingController {
   async handleMeailSend(@Payload() data: any, @Ctx() context: RmqContext) {
     this.mailingService.sendEmail(data);
     this.rmqService.ack(context);
-  }
-  
+  } 
 }

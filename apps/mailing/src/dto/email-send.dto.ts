@@ -1,10 +1,12 @@
-import { IsNotEmpty, Validate } from 'class-validator';
+import { IsNotEmpty, IsEmail, Validate } from 'class-validator';
 
 export class EmailSendDto {
   @IsNotEmpty()
+  @IsEmail()
   to: string;
 
   @IsNotEmpty()
+  @IsEmail()
   from: string;
 
   @IsNotEmpty()

@@ -1,1 +1,1 @@
-NODE_TLS_REJECT_UNAUTHORIZED='0' npm run start:dev
+npm run start:dev
