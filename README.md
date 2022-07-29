@@ -14,10 +14,10 @@
 
 ## Description
 
-This project is based on technical test 
+This project is based on a technical test 
 [requirments](https://github.com/abnaceur/nestJs-mailing-microservice/tree/master/docs/NestJSHomeAssignment.pdf) for a Senior fullstack developer position at Liquidity Group. 
 
-## prerequisite
+## Prerequisite
 
 ```bash
 1 - Docker
